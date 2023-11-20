@@ -7,16 +7,14 @@
 
 * Simply useQuery taking argument explaination
 	                                 	              
-    **queryKey** :     A unique identifier for the query.                 
- 
+    **queryKey** :     A unique identifier for the query.
     <br>
-
     **queryFn**	 :     A function that fetches the data 
     <br>
     **config**	      An object that configures the query behavior.	      
     <br>
 
-    staleTime         The maximum amount of time that the data can be <br>
+    **staleTime**         The maximum amount of time that the data can be <br>
                       considered stale before refetching.                     
 
     <br>
