@@ -6,8 +6,23 @@
 
 
 * Simply useQuery taking argument explaination
-	<iframe width="600" height="300" src="https://docs.google.com/spreadsheets/d/1Mw9aFvV2Mc6XZy2z8-09hTe9AjFRrXLRgNRLc4TTr68/edit?pli=1#gid=1633273986"></iframe>
+	                                 	              
+    **queryKey** :     A unique identifier for the query.                 
+ 
+    <br>
 
+    **queryFn**	 :     A function that fetches the data 
+    <br>
+    **config**	      An object that configures the query behavior.	      
+    <br>
+
+    staleTime         The maximum amount of time that the data can be <br>
+                      considered stale before refetching.                     
+
+    <br>
+    **cacheTime** :  The maximum amount of time that the data should be cached                                                        
+
+    **onError**	  :A callback function that is called when the query fails to fetch data.
 
 
 
