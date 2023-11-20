@@ -1,8 +1,41 @@
-# React + Vite
+# TanStack Query (react-query)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ * useQuery 
 
-Currently, two official plugins are available:
+    TanStack query has their own hook that name is " **useQuery()** ".useQuery take parameter as argument mutliple option like "queryKey,queryFn ,config ,enabled , refetchOnMount,onSuccess,cacheTime ,onError,
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+* Simply useQuery taking argument explaination
+    **Name**	         **Description**	                                 **Type**	                  **Default**
+
+    queryKey           A unique identifier for the query.                 Array, string, 
+                                                                          or any other type.                  None
+
+    queryFn	           A function that fetches the data                      Function                         None
+
+    config	           An object that configures the query behavior.	      Object
+
+
+    staleTime         The maximum amount of time that the data can be         Number or                         0
+                      considered stale before refetching.                     Function
+
+
+    cacheTime	      The maximum amount of time that the data                Number or Function.	     5*60 *1000 
+                      should be cached.                                                                  (5 minutes)
+
+    onError	          A callback function that is called                       Function.                   None
+                      when the query fails to fetch data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

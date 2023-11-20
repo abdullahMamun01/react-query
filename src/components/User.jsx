@@ -11,7 +11,8 @@ export default function User() {
   }
   const { data, isLoading, isError, error } = useQuery({
     queryKey: ["user"],
-    queryFn: fetchUser
+    queryFn: fetchUser ,
+    config :{}
   })
   if (isLoading) {
     return <div>Loading.....</div>
