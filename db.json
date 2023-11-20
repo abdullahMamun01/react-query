@@ -1,0 +1,70 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "title": "Introduction to Vite",
+      "content": "Vite is a fast build tool for modern web development."
+    },
+    {
+      "id": 2,
+      "title": "React Hooks Tutorial",
+      "content": "Learn how to use React hooks for state management."
+    },
+    {
+      "id": 3,
+      "title": "CSS-in-JS with Styled Components",
+      "content": "Explore the benefits of using styled components in React applications."
+    },
+    {
+      "title": "learn typescript",
+      "content": "learn typescript23",
+      "id": 4
+    },
+    {
+      "title": "learn query validation",
+      "content": "learn query validation",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "reposetory": {
+        "portfolio": "file",
+        "project1": "file",
+        "project2": "file",
+        "project3": "file",
+        "project4": "file",
+        "project5": "file"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "reposetory": {
+        "portfolio": "file",
+        "project1": "file",
+        "project2": "file",
+        "project3": "file",
+        "project4": "file",
+        "project5": "file"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "email": "bob.johnson@example.com",
+      "reposetory": {
+        "portfolio": "file",
+        "project1": "file",
+        "project2": "file",
+        "project3": "file",
+        "project4": "file",
+        "project5": "file"
+      }
+    }
+  ]
+}
