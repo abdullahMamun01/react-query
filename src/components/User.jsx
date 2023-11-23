@@ -6,14 +6,19 @@ import React from 'react'
 
 export default function User() {
   const fetchUser = async () => {
-    const res = await axios.get("http://localhost:4000/users")
+    const res = await axios.get("https://jsonplaceholder.typicode.com/posts")
     return res.data
   }
   const { data, isLoading, isError, error } = useQuery({
+    
     queryKey: ["user"],
-    queryFn: fetchUser ,
-    config :{}
+
+    queryFn: fetchUser , // fetching data 
+
+    select : (data) => data.map(item => ({id: item.id, title:item.title})) // set the necessary data 
+    
   })
+
   if (isLoading) {
     return <div>Loading.....</div>
   }
@@ -25,11 +30,17 @@ export default function User() {
   return (
     <div className='min-h-scree justify-center items-center'>
       <h1>I am user Routes</h1>
-      <div>
+      <div className='grid grid-cols-4 gap-5 '>
         
         
           {
-            data.map(user => <UserByDetails key={user.id} id={user.id}/>
+            data.map(user => (
+              <ul className='my-[10px] bg-sky-600 text-white p-[14px]  rounded-lg'>
+                <li>{user.id}</li>
+                <li>{user.title}</li>
+
+              </ul>
+            )
         
             )
           }

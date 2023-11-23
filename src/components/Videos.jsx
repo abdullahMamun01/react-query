@@ -12,11 +12,13 @@ export default function Videos() {
 
     const { data, status } = useQuery({
         queryKey: ['videos'],
-        queryFn: fetchPosts,
-        config : {caches : 1000}
+
+        queryFn: fetchPosts, // provide fetching function
+        // refetchOnMount 
+        enabled
     });
 
-    console.log("i am render from videos....")
+
 
     if (status === 'pending') {
         console.log(status)

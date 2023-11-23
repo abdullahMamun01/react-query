@@ -23,6 +23,9 @@ const MenubarDemo = () => {
             <Link to="/user">Users</Link>
           </Menubar.Trigger>
           <Menubar.Trigger className="py-2 px-3 outline-none select-none font-medium leading-none rounded text-violet11 text-[13px] flex items-center justify-between gap-[2px] data-[highlighted]:bg-violet4 data-[state=open]:bg-violet4">
+            <Link to="/paginate">Paginate</Link>
+          </Menubar.Trigger>
+          <Menubar.Trigger className="py-2 px-3 outline-none select-none font-medium leading-none rounded text-violet11 text-[13px] flex items-center justify-between gap-[2px] data-[highlighted]:bg-violet4 data-[state=open]:bg-violet4">
             Login
           </Menubar.Trigger>
         </Menubar.Menu>

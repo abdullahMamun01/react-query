@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import * as Form from '@radix-ui/react-form';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import axios from 'axios';
-export default function FormDemo({fetchPosts}) {
+export default function FormDemo() {
+
   const [data,setData] = useState({
     title : "" ,
     content : ""
@@ -16,7 +17,9 @@ const queryClient = useQueryClient()
   const mutation = useMutation(
     {
       mutationFn : createPost,
+      //if post request is success 
       onSuccess : () =>{
+        //refetch the data when user send http post request
         queryClient.invalidateQueries({queryKey : ["user"]})
       }
     }
